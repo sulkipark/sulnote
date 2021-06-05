@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sulnote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="Sulnote write" name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="../../assets/images/s_favicon.ico">
+    <!-- Sweet Alert css -->
+    <link href="../../plugins/sweet-alert/sweetalert2.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- App css -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <!-- <script src="../../assets/js/modernizr.min.js"></script> -->
+
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link href="https://cdn.datatables.net/r/dt/jq-2.1.4,dt-1.10.9,b-1.0.3,b-flash-1.0.3/datatables.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+    <body class="inprogress_body">
+
+        <!-- Navigation Bar-->
+        <!-- <div id="includeHeader"></div> -->
+        <header id="topnav">
+
+            <div class="topbar-main">
+
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+
+                    <div class="logo">
+
+                        <!-- Image Logo -->
+
+                        <a href="1_situation.html" class="logo">
+
+                            <!-- <img src="../../assets/images/logo_sm.png" alt="" height="26" class="logo-small"> -->
+
+                            <img src="../../assets/images/sulnote_logo.jpg" alt="" height="48" class="logo-large">
+
+                        </a>
+
+
+                    </div>
+
+                    <!-- End Logo container-->
+
+                    <!-- end menu-extras -->
+                    <div class="header_admin pull-right">
+                      <span class="admin_status">미래사업가 과정</span>
+                      <span class="admin_name">홍길동 / Assessor</span>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+
+            </div>
+
+            <!-- end topbar-main -->
+
+
+
+            <div class="navbar-custom">
+
+                <div class="container-fluid">
+
+                    <div id="navigation">
+
+                        <!-- Navigation Menu-->
+
+                        <ul class="navigation-menu">
+
+                          <li class="has-submenu">
+
+                              <a href="../assessor/1_situation.html" style="color: rgba(255, 255, 255, 0.7)">진단 현황</a>
+
+                          </li>
+
+                          <li class="has-submenu">
+
+                              <a href="../assessor/2_inprogress.html" style="color: #fff">진단 및 평가</a>
+
+                          </li>
+
+                          <li class="has-submenu">
+
+                              <a href="../assessor/3_datacontrol.html" style="color: rgba(255, 255, 255, 0.7)">데이터 조율</a>
+
+                          </li>
+
+                        </ul>
+
+                        <!-- End navigation menu -->
+
+                    </div> <!-- end #navigation -->
+
+                </div> <!-- end container -->
+
+            </div> <!-- end navbar-custom -->
+
+        </header>
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+              <!-- Page-Title -->
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="page-title-box">
+
+                          <!-- <h4 class="page-title">Participant</h4> -->
+                      </div>
+                  </div>
+              </div>
+              <!-- end page title end breadcrumb -->
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card-box">
+                          <div class="page-title-box inprogress">
+
+                              <h4 class="page-title">진단 및 평가</h4>
+                              <span class="person_name">LG전자 김엘지</span>
+                              <span class="person_startendtime">
+                                시작일시 : 2020-09-22 12:08:32<br>
+                                종료일시 : 2020-09-22 14:23:34
+                              </span>
+
+                              <a href="1_situation.html" class="situation_link participant_situation"> 참석자 현황보기</a>
+                          </div>
+                          <div class="clearboth"></div>
+                          <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-box">
+
+                                    <ul class="nav nav-pills navtab-bg nav-justified">
+                                        <li class="nav-item">
+                                            <a href="#home1" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                                                In-basket questions (진행완료)
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#profile1" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                                BEI (진행중)
+                                            </a>
+                                        </li>
+
+
+                                    </ul>
+                                    <div class="tab-content">
+
+                                        <div class="tab-pane show active" id="home1">
+                                          <div class="page-title-box">
+                                              <h4 class="page-title">역량 1. 종합적 상황 인지/판단</h4>
+                                          </div>
+                                          <div class="tabs-vertical-env">
+                                              <ul class="nav tabs-vertical">
+                                                  <li class="nav-item">
+                                                      <a href="#v-home" class="nav-link active" data-toggle="tab" aria-expanded="false">최종보고서</a>
+                                                  </li>
+                                                  <li class="nav-item">
+                                                      <a href="#v-profile" class="nav-link" data-toggle="tab" aria-expanded="true">메일 답신</a>
+                                                  </li>
+
+                                              </ul>
+
+                                              <div class="tab-content">
+                                                  <div class="tab-pane active" id="v-home">
+                                                    <div class="row">
+                                                      <div class="col-sm-6">
+                                                          <div class="card-box slimscroll scroll-box">
+                                                              <h4 class="header-title mb-4">최종보고서</h4>
+
+                                                              <div class="inbox-widget" style="max-height: 370px;">
+                                                                <div class="report_box">
+
+                                                                <h3 class="title">1. 아이템 선정 및 근거</h3>
+                                                                  <div class="contentBox">
+                                                                    <h4 class="subTitle">- 3C 관점 사업 방향성 분석</h4>
+                                                                    <div class="content">
+                                                                      <div class="flex">
+                                                                        <span>[시장]</span>
+                                                                        <p>
+                                                                          미래 성장성이 높은 '고령화' 시장 타겟 필요 정부가
+                                                                          보험금을 지급하거나, 직접 구매하는 제품의 경우, 정부의
+                                                                          단가압박으로 인한 리스크 존재 지역적으로 해외성장 시장
+                                                                          존재하며, 의료시설이 취약함에 따라 D2C(Direct to Customer)
+                                                                          유통이 가능한 제품이 적합
+                                                                          합성의약품에서 바이오의약품으로 중심 이동,
+                                                                          전체적으로 합성의약품은 정체
+                                                                        </p>
+                                                                      </div>
+                                                                      <div class="flex">
+                                                                        <span>[경쟁]</span>
+                                                                        <p>
+                                                                          2000년 초반부터 지속된 R&D로, 경쟁사의 시장성 높은
+                                                                          신약 개발가능성 높음
+                                                                        </p>
+                                                                      </div>
+                                                                      <div class="flex">
+                                                                        <span>[자사]</span>
+                                                                        <p>
+                                                                          최근 자사의 신약 R&D 성과 미흡한 상황, 시장/소비자들도
+                                                                          자사의 신약에 대한 기대감 크지 않음. 신약 투자에 대한
+                                                                          성공 가능성에 대한 보수적 판단 필요
+                                                                        </p>
+                                                                      </div>
+                                                                    </div>
+                                                                    <h4 class="subTitle">- 타겟 선정</h4>
+                                                                    <div class="content">
+                                                                      <p>
+                                                                        아이템별 시장매력도와 자사 역량에 대해 종합적으로 평가한 결과,
+                                                                        "바이오의약"을 선정 (상세는 아래 내용 및 도표 참고)
+                                                                      </p>
+                                                                      <ul>
+                                                                        <li class="flex">
+                                                                          <span>①</span>
+                                                                          <p>앞으로 합성의약품 대비 시장의 성장이 뚜렷하고,</p>
+                                                                        </li>
+                                                                        <li class="flex">
+                                                                          <span>②</span>
+                                                                          <p>
+                                                                            자가주사가 가능하여, 국내 비효율적인 도매 유통 Risk를
+                                                                            최소화하여 사업 가능
+                                                                          </p>
+                                                                        </li>
+                                                                        <li class="flex">
+                                                                          <span>③</span>
+                                                                          <p>해외성장 시장에도 진입이 가능한(의료시설이 열약, 자가 주사 가능)</p>
+                                                                        </li>
+                                                                        <li class="flex">
+                                                                          <span>④</span>
+                                                                          <p>
+                                                                            바이오마커 공급 및 해외진출은 복지부의 지원을 통해 돌파 가능한
+                                                                            과제로 판단
+                                                                          </p>
+                                                                        </li>
+                                                                      </ul>
+                                                                    </div>
+                                                                  </div>
+                                                              </div>
+
+                                                              </div>
+
+                                                          </div>
+                                                      </div>
+                                                      <div class="col-sm-6">
+                                                          <div class="card-box slimscroll scroll-box" style="box-shadow: none; padding-right: 35px;">
+                                                              <!-- <br> -->
+                                                              <!-- <input class="form-control" type="range" name="range" min="0" max="10"> -->
+                                                              <h5 class="title_redline">상황파악(고객/기술/시장/경쟁) 및 기회포착</h5>
+
+                                                              <div class="question_container">
+                                                                <div class="title_small">정보수집 및 분석과 핵심변화 포인트 파악</div>
+
+
+                                                                <div class="progressbar_input_container">
+                                                                  <label>
+                                                                    <input type="number" id="value0" class="progressbar_input" min="0" max="4" value="0" >
+                                                                  </label>
+                                                                </div>
+
+                                                                <!-- <progress value="0" max="4" class="media-progress" onchange="showvalueToinput(0)"></progress> -->
+
+                                                                <input type="range" min="0" max="4" value="0" step='0.1' class="media-progress" list='tickmarks' onchange="showvalueToinput(0)">
+                                                                <!--  -->
+                                                                <div class="progressbar_label_container">
+                                                                  <span class="progressbar_num">0</span>
+                                                                  <span class="progressbar_txt">향상 필요</span>
+                                                                  <span class="progressbar_num">1</span>
+
+                                                                  <span class="progressbar_txt">기대 충족</span>
+                                                                  <span class="progressbar_num">2</span>
+
+                                                                  <span class="progressbar_txt">우수</span>
+                                                                  <span class="progressbar_num">3</span>
+
+                                                                  <span class="progressbar_txt">탁월</span>
+                                                                  <span class="progressbar_num">4</span>
+                                                                </div>
+
+
+                                                              </div>
+
+                                                              <h5 class="title_redline">세부 계획 구체화</h5>
+
+                                                              <div class="question_container">
+                                                                <div class="title_small">세부 전략 수립 및 자원확보/조정</div>
+
+
+                                                                <div class="progressbar_input_container">
+                                                                  <label>
+                                                                    <input type="number" id="value1" class="progressbar_input" max="4" min="0" value="0"/>
+                                                                  </label>
+                                                                </div>
+                                                                <div class="clearboth"></div>
+
+                                                                <!-- <progress value="0" max="4" class="media-progress" onchange="showvalueToinput(2)"></progress> -->
+                                                                <input type="range" min="0" max="4" value="0" step='0.1' class="media-progress" onchange="showvalueToinput(1)" list='tickmarks' >
+
+                                                                <div class="progressbar_label_container">
+                                                                  <span class="progressbar_num">0</span>
+                                                                  <span class="progressbar_txt">향상 필요</span>
+                                                                  <span class="progressbar_num">1</span>
+
+                                                                  <span class="progressbar_txt">기대 충족</span>
+                                                                  <span class="progressbar_num">2</span>
+
+                                                                  <span class="progressbar_txt">우수</span>
+                                                                  <span class="progressbar_num">3</span>
+
+                                                                  <span class="progressbar_txt">탁월</span>
+                                                                  <span class="progressbar_num">4</span>
+                                                                </div>
+
+                                                              </div>
+
+                                                              <h5 class="title_redline">타당성 검증</h5>
+
+
+
+                                                              <div class="question_container">
+
+                                                                <div class="title_small">전략적 타당성 검증 및 장애요인 예측/대응방안 수립</div>
+
+
+
+
+
+                                                                <div class="progressbar_input_container">
+
+                                                                  <label>
+
+                                                                    <input type="number" id="value2" class="progressbar_input" min="0" max="4" value="0" >
+
+                                                                  </label>
+
+                                                                </div>
+
+
+
+                                                                <!-- <progress value="0" max="4" class="media-progress" onchange="showvalueToinput(0)"></progress> -->
+
+
+
+                                                                <input type="range" min="0" max="4" value="0" step='0.1' class="media-progress" list='tickmarks' onchange="showvalueToinput(2)">
+
+
+
+                                                                <div class="progressbar_label_container">
+                                                                  <span class="progressbar_num">0</span>
+                                                                  <span class="progressbar_txt">향상 필요</span>
+                                                                  <span class="progressbar_num">1</span>
+
+                                                                  <span class="progressbar_txt">기대 충족</span>
+                                                                  <span class="progressbar_num">2</span>
+
+                                                                  <span class="progressbar_txt">우수</span>
+                                                                  <span class="progressbar_num">3</span>
+
+                                                                  <span class="progressbar_txt">탁월</span>
+                                                                  <span class="progressbar_num">4</span>
+                                                                </div>
+
+
+
+                                                              </div>
+
+
+                                                              <h4 class="title_comment mb-12"><br><br>Comments</h4>
+                                                              <textarea class="comment_textarea" placeholder="Comment를 입력하세요."></textarea>
+                                                              <!-- <div class="comment-list slimscroll" style="max-height: 370px;">
+
+                                                              </div> -->
+
+                                                          </div>
+                                                      </div>
+
+
+                                                    </div>
+                                                  </div>
+                                                  <div class="tab-pane fade" id="v-profile">
+                                                    <div class="slimscroll">
+                                                      <h3 class="black_h3"><span class="black_num">1</span>경영지원본부장의 ‘사업전략’ 메일에 대한 답신</h3>
+                                                      <hr class="gray_hr">
+                                                      <p>
+                                                        안녕하세요, 경영지원본부장님.<br>
+                                                        보내주신 사업전략과 관련하여 팀 내에서 논의 중인 사업추진 전략 공유드립니다.
+                                                        <br><br>
+
+                                                        - 해외사업전략<br><br>
+
+                                                        : 바이오의약 / 관절염 복제약은 사업 초기부터 해당 시장에 대한 전략 수립 필요 성장 지역 중(중국, 인도, 브라질, 중남미 등) 단계적으로
+                                                        진출 가능한 지역 선정 필요 다국적 경쟁사 존재하는 것을 고려 시(일본, 인도, 프랑스, 독일), 1차적인 판단으로는 중남미 지역이 적합
+                                                        : 해외 진출 시 복지부에서 추진하는 해외진출 확대 적극 활용 필요 특히 중남미 6개국 FTA체결에 따른 다앙햔 지원은 상기 지역 전략과 부합
+                                                        <br><br>
+                                                        - 지향점(Aspiration) / Migration Plan
+                                                        <br><br>
+
+                                                        관절염 복제약 성공을 통해 바이오시밀러 시장에서 경쟁우위 달성, 타시밀러 시장으로의 성장발판 마련
+                                                        재무적 목표 : '25년 1000억 매출 → '30년 5000억 매출 (이익율 평균 15% 유지)
+                                                        Migration Plan : 1단계 시장 진입(국내, 해외 선택지역 1곳) → 2단계 시장확대(해외 지역 3곳 확장) → 3단계 타시밀러 제품 확대
+                                                        <br><br>
+                                                        - Risk 요인 및 대응방안
+                                                        <br><br>
+
+                                                        바이오마커 기술사용료 증가는 정부 지원 최대한 활용
+                                                        생산공장 투자는, 현재 자원투자 규모상 충분히 대응 가능(하기 상세)
+                                                        특허종료에 맞춰서 제품 시판 필수 : R&D단계부터 영업/마케팅 전략(해외진출 포함)을 세워서, Timely한 출시에 대응
+                                                        가격 인하 이슈 : 오리지널 제조사의 동향을 면밀히 파악하고, 생산/유통의 지속적 효율화를 통해 가격 인하 가능한 체력 확보
+                                                        <br><br>
+                                                        궁금하신 내용은 언제든지 말씀해주십시오. 감사합니다.
+                                                        <br><br>
+                                                      </p>
+
+                                                      <h3 class="black_h3"><span class="black_num">2</span>
+                                                        백신사업전략팀장의 ‘임원회의 보고’ 메일에 대한 답신</h3>
+                                                        <br><br>
+                                                      <p>
+                                                        안녕하세요, 백신사업전략팀장님.<br><br>
+                                                        보내주신 임원회의 보고 내용과 관련하여 팀 내에서 논의 중인 내용을 공유드립니다.<br>
+                                                        - Capital 투자 전략
+                                                      </p>
+                                                    </div>
+                                                  </div>
+
+                                              </div>
+                                              <!-- <div class="button_container">
+                                                <button class="save_btn" id="sa-save">저장하기</button>
+                                                <button class="send_btn" id="sa-finalsend">최종 제출하기</button>
+                                              </div> -->
+                                              <div class="button_container">
+
+                                                <button class="save_btn sa-save">저장하기</button>
+
+                                                <button class="send_btn sa-finalsend">최종 과제 제출 및 종료하기</button>
+
+                                              </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="tab-pane fade" id="profile1">
+                                          <div class="slimscroll">
+                                            <div class="page-title-box">
+                                                <h4 class="page-title">역량 2. 실행력 있는 조직구축 및 관리</h4>
+                                            </div>
+                                            <div class="bei_container">
+                                              <div class="video_container">
+                                                <!-- <video src="https://youtu.be/zFALwzn1gyA" controls="true"></video> -->
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/zFALwzn1gyA" title="YouTube video player" allowfullscreen></iframe>
+                                                <br><br>
+                                                <a href="https://www.youtube.com/embed/zFALwzn1gyA" download class="download_btn">
+                                                  <!-- <img src="../../assets/images/lg/"> -->
+                                                 <img src="../../assets/images/lg/red_mic.png">&nbsp;  BEI 녹취록 다운로드
+                                                </a>
+
+                                              </div>
+
+                                              <div class="row">
+                                                <div class="col-sm-6">
+
+                                                  <h5 class="title_redline">실행조직 구축</h5>
+
+                                                  <div class="question_container">
+                                                    <div class="title_small">구심적 파악 및 주변세력 규합</div>
+
+
+                                                    <div class="progressbar_input_container">
+                                                      <label>
+                                                        <input type="number" id="value3" class="progressbar_input" max="4" min="0" />
+                                                      </label>
+                                                    </div>
+
+                                                    <div class="clearboth"></div>
+
+                                                    <!-- <progress value="0" max="4" class="media-progress" onchange="showvalueToinput(4)"></progress>
+                                                     -->
+
+                                                    <input type="range" min="0" max="4" value="0" step='0.1' class="media-progress" list='tickmarks' onchange="showvalueToinput(3)">
+
+                                                    <!-- <span class="circle_span">&nbsp;</span> -->
+
+                                                    <!-- <div class="Progressbar">
+                                                      <div class="Progressbar__value"></div>
+                                                      <progress value="2" max="5">5</progress>
+                                                    </div> -->
+
+
+                                                    <span class="progressbar_num">0</span>
+                                                    <span class="progressbar_txt">향상 필요</span>
+                                                    <span class="progressbar_num">1</span>
+
+                                                    <span class="progressbar_txt">기대 충족</span>
+                                                    <span class="progressbar_num">2</span>
+
+                                                    <span class="progressbar_txt">우수</span>
+                                                    <span class="progressbar_num">3</span>
+
+                                                    <span class="progressbar_txt">탁월</span>
+                                                    <span class="progressbar_num">4</span>
+
+                                                  </div>
+                                                  <div class="clearboth"></div>
+
+                                                  <div class="question_container">
+                                                    <div class="title_small">동기부여 / 비전제시</div>
+
+
+                                                    <div class="progressbar_input_container">
+                                                      <label>
+                                                        <input type="number" id="value4" class="progressbar_input" max="4" min="0" />
+                                                      </label>
+                                                    </div>
+
+                                                    <div class="clearboth"></div>
+
+                                                    <!-- <progress value="0" max="4" class="media-progress" onchange="showvalueToinput(5)"></progress>
+                                                     -->
+                                                    <input type="range" min="0" max="4" value="0" step='0.1' class="media-progress" list='tickmarks' onchange="showvalueToinput(4)">
+
+
+                                                    <div class="progressbar_label_container">
+                                                      <span class="progressbar_num">0</span>
+                                                      <span class="progressbar_txt">향상 필요</span>
+                                                      <span class="progressbar_num">1</span>
+
+                                                      <span class="progressbar_txt">기대 충족</span>
+                                                      <span class="progressbar_num">2</span>
+
+                                                      <span class="progressbar_txt">우수</span>
+                                                      <span class="progressbar_num">3</span>
+
+                                                      <span class="progressbar_txt">탁월</span>
+                                                      <span class="progressbar_num">4</span>
+                                                    </div>
+
+                                                  </div>
+
+                                                </div>
+                                                <div class="col-sm-6">
+
+                                                  <h5 class="title_redline">성과 Drive</h5>
+
+                                                  <div class="question_container">
+                                                    <div class="title_small">도전적 목표 제시</div>
+                                                    <div class="progressbar_input_container">
+                                                      <label>
+                                                        <input type="number" id="value5" class="progressbar_input" max="4" min="0" />
+                                                      </label>
+                                                    </div>
+
+                                                    <div class="clearboth"></div>
+
+                                                    <!-- <progress value="0" max="4" class="media-progress" onchange="showvalueToinput(6)"></progress>
+                                                     -->
+                                                    <input type="range" min="0" max="4" value="0" step='0.1' class="media-progress" list='tickmarks' onchange="showvalueToinput(5)">
+
+                                                    <div class="progressbar_label_container">
+                                                      <span class="progressbar_num">0</span>
+                                                      <span class="progressbar_txt">향상 필요</span>
+                                                      <span class="progressbar_num">1</span>
+
+                                                      <span class="progressbar_txt">기대 충족</span>
+                                                      <span class="progressbar_num">2</span>
+
+                                                      <span class="progressbar_txt">우수</span>
+                                                      <span class="progressbar_num">3</span>
+
+                                                      <span class="progressbar_txt">탁월</span>
+                                                      <span class="progressbar_num">4</span>
+                                                    </div>
+
+                                                  </div>
+                                                  <div class="clearboth"></div>
+                                                  <div class="question_container">
+                                                    <div class="title_small">실행 촉진 및 점검</div>
+
+
+                                                    <div class="progressbar_input_container">
+                                                      <label>
+                                                        <input type="number" id="value6" class="progressbar_input" max="4" min="0" />
+                                                      </label>
+                                                    </div>
+
+                                                    <div class="clearboth"></div>
+
+                                                    <!-- <progress value="0" max="4" class="media-progress" onchange="showvalueToinput(7)"></progress>
+                                                     -->
+                                                    <input type="range" min="0" max="4" value="0" step='0.1' class="media-progress" list='tickmarks' onchange="showvalueToinput(6)">
+
+                                                    <div class="progressbar_label_container">
+                                                      <span class="progressbar_num">0</span>
+                                                      <span class="progressbar_txt">향상 필요</span>
+                                                      <span class="progressbar_num">1</span>
+
+                                                      <span class="progressbar_txt">기대 충족</span>
+                                                      <span class="progressbar_num">2</span>
+
+                                                      <span class="progressbar_txt">우수</span>
+                                                      <span class="progressbar_num">3</span>
+
+                                                      <span class="progressbar_txt">탁월</span>
+                                                      <span class="progressbar_num">4</span>
+                                                    </div>
+
+                                                  </div>
+
+
+                                                </div>
+                                                <div class="comment_container">
+                                                  <h4 class="title_comment mb-12"><br><br>Comments</h4>
+                                                  <textarea class="comment_textarea" placeholder="Comment를 입력하세요."></textarea>
+
+                                                </div>
+
+                                              </div>
+                                            </div>
+
+
+
+                                          </div>
+                                          <!-- <div class="button_container">
+                                            <button class="save_btn" id="sa-save">저장하기</button>
+                                            <button class="send_btn" id="sa-finalsend">최종 제출하기</button>
+                                          </div> -->
+
+                                          <div class="button_container">
+
+                                            <button class="save_btn sa-save">저장하기</button>
+
+                                            <button class="send_btn sa-finalsend">최종 과제 제출 및 종료하기</button>
+
+                                          </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+
+
+                          </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+        <div id="includeFooter"></div>
+
+        <!-- End Footer -->
+
+        <!-- jQuery  -->
+        <script src="../../assets/js/jquery.min.js"></script>
+        <script src="../../assets/js/popper.min.js"></script>
+        <script src="../../assets/js/bootstrap.min.js"></script>
+        <script src="../../assets/js/waves.js"></script>
+        <script src="../../assets/js/jquery.slimscroll.js"></script>
+
+        <script src="../../plugins/sweet-alert/sweetalert2.min.js"></script>
+        <script src="../../assets/pages/jquery.sweet-alert.init.js"></script>
+        <!-- App js -->
+        <script src="../../assets/js/jquery.core.js"></script>
+        <script src="../../assets/js/jquery.app.js"></script>
+
+        <script src="../../assets/js/custom_progress.js"></script>
+
+        <script>
+            $(function(){
+                // $("#includeHead").load("../layout/head.html");
+                $("#includeHeader").load("../layout/header_assessor.html");
+                // $("#includeTopbar").load("topbar.html");
+                $("#includeFooter").load("../layout/footer.html");
+            });
+        </script>
+
+
+
+    </body>
+</html>

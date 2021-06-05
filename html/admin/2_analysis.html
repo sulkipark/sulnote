@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- <head id="includeHead"></head> -->
+    <head>
+        <meta charset="utf-8" />
+        <title>Sulnote</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="Sulnote write" name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="../../assets/images/s_favicon.ico">
+
+        <!-- App css -->
+        <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../../assets/css/icons.css" rel="stylesheet" type="text/css" />
+        <link href="../../assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="../../assets/css/layout.css" rel="stylesheet" type="text/css" />
+        <!-- <script src="../../assets/js/modernizr.min.js"></script> -->
+        <link href="https://cdn.datatables.net/r/dt/jq-2.1.4,dt-1.10.9,b-1.0.3,b-flash-1.0.3/datatables.min.css" rel="stylesheet" type="text/css" />
+        <link href="https://cdn.datatables.net/fixedcolumns/3.3.2/css/fixedColumns.dataTables.min.css" rel="stylesheet" type="text/css" />
+
+        <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css" />
+    </head>
+
+
+
+    <body>
+
+        <!-- Navigation Bar-->
+        <header id="topnav">
+
+            <div class="topbar-main">
+
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+
+                    <div class="logo">
+
+                        <!-- Image Logo -->
+
+                        <a href="1_situation.html" class="logo">
+
+                            <img src="../../assets/images/sulnote_logo.jpg" alt="" height="48" class="logo-large">
+
+                        </a>
+
+
+                    </div>
+
+                    <!-- End Logo container-->
+
+                    <!-- end menu-extras -->
+                    <div class="header_admin pull-right">
+                      <span class="admin_status">미래사업가 과정</span>
+                      <span class="admin_name">홍길동 / Admin</span>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+
+            </div>
+
+            <!-- end topbar-main -->
+
+
+            <div class="navbar-custom">
+
+                <div class="container-fluid">
+
+                    <div id="navigation">
+
+                        <!-- Navigation Menu-->
+
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+
+                                <a href="../admin/1_situation.html" style="color: rgba(255, 255, 255, 0.7)">진단 참여 현황</a>
+
+                            </li>
+
+                            <li class="has-submenu">
+
+                                <a href="../admin/2_analysis.html" style="color: #fff">데이터 분석</a>
+
+                            </li>
+
+                            <li class="has-submenu">
+
+                                <a href="../admin/3_report.html" style="color: rgba(255, 255, 255, 0.7)">레포트 추출</a>
+
+                            </li>
+
+                        </ul>
+
+                        <!-- End navigation menu -->
+
+                    </div> <!-- end #navigation -->
+
+                </div> <!-- end container -->
+
+            </div> <!-- end navbar-custom -->
+
+        </header>
+
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+
+              <!-- Page-Title -->
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="page-title-box">
+
+                          <!-- <h4 class="page-title">Participant</h4> -->
+                      </div>
+                  </div>
+              </div>
+              <!-- end page title end breadcrumb -->
+
+                <div class="row">
+                  <div class="col-md-12">
+                      <div class="card-box admin_analysis">
+                        <div class="page-title-box">
+                            <h4 class="page-title">데이터 분석</h4>
+
+                            <!-- <button class="situation_link">
+                              <img src="../../assets/images/lg/gray_mic.png"> 녹취록 다운로드</button> -->
+
+                            <!-- <button class="situation_link">
+                              <img src="../../assets/images/lg/red_doc_icon.png"> 최종 과제물 다운로드</button> -->
+                            <!-- <button class="situation_link">
+                              <img src="../../assets/images/lg/excel_icon.png"> 엑셀 다운로드</button> -->
+                        </div>
+                          <ul class="nav nav-pills navtab-bg nav-justified">
+                              <li class="nav-item">
+                                  <a href="#leader_tab" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                                      리더 성향 검사
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#basket_tab" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                      In-Basket 과제
+                                  </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a href="#beiinterview_tab" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                      BEI 인터뷰
+                                  </a>
+                              </li>
+
+                          </ul>
+                          <div class="tab-content">
+                              <div class="tab-pane show active" id="leader_tab">
+
+                                <iframe src="2_analysis_test.html" height="620" width="100%" frameBorder="0"></iframe>
+                                <!-- scroll h600 scroll_x -->
+                                <!-- <div class="">
+                                  <div class="count-checkboxes-wrapper">
+                                    총 <span id="checked_count1">0</span>명의 참석자를 선택하였습니다.
+                                  </div>
+
+                                  <table id="example1" class="display" width="100%">
+                                    <tfoot><tr></tr></tfoot>
+                                  </table>
+                                </div> -->
+                              </div>
+                              <div class="tab-pane" id="basket_tab">
+
+                                <div class="">
+                                  <div class="count-checkboxes-wrapper">
+                                    총 <span id="checked_count2">0</span>명의 참석자를 선택하였습니다.
+                                  </div>
+
+                                  <table id="example2" class="display" width="100%">
+                                    <tfoot><tr></tr></tfoot>
+
+                                  </table>
+                                </div>
+                              </div>
+                              <div class="tab-pane" id="beiinterview_tab">
+                                <div class="">
+                                  <div class="count-checkboxes-wrapper">
+                                    총 <span id="checked_count3">0</span>명의 참석자를 선택하였습니다.
+                                  </div>
+
+                                  <table id="example3" class="display" width="100%">
+                                    <tfoot><tr></tr></tfoot>
+                                  </table>
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div> <!-- end col -->
+                </div>
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+        <!-- Footer -->
+        <div id="includeFooter"></div>
+        <!-- End Footer -->
+
+        <!-- jQuery  -->
+        <script src="../../assets/js/jquery.min.js"></script>
+        <script src="../../assets/js/popper.min.js"></script>
+        <script src="../../assets/js/bootstrap.min.js"></script>
+        <!-- <script src="../../assets/js/jquery.slimscroll.js"></script> -->
+
+        <script src="https://cdn.datatables.net/r/dt/jq-2.1.4,dt-1.10.9,b-1.0.3,b-flash-1.0.3/datatables.min.js"></script>
+        <script src="https://cdn.datatables.net/select/1.0.1/js/dataTables.select.js"></script>
+        <!-- <script src="https://cdn.datatables.net/responsive/2.2.7/js/dataTables.responsive.min.js"></script> -->
+        <!-- <script src="https://cdn.datatables.net/fixedheader/3.1.8/js/dataTables.fixedHeader.min.js"></script> -->
+        <script src="https://cdn.datatables.net/fixedcolumns/3.3.2/js/dataTables.fixedColumns.min.js"></script>
+
+
+        <!-- Buttons examples -->
+        <script src="../../assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="../../assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+        <script src="../../assets/plugins/datatables/jszip.min.js"></script>
+        <script src="../../assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="../../assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="../../assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="../../assets/plugins/datatables/buttons.print.min.js"></script>
+
+        <script src="../../assets/js/custom_datatable.js"></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Sulnote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta content="Sulnote write" name="description" />
+    <meta content="Coderthemes" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/path/to/favicon.ico">
+
+    <!-- App css -->
+    <link href="../../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/layout.css" rel="stylesheet" type="text/css" />
+
+    <!-- <script src="../../assets/js/modernizr.min.js"></script> -->
+
+    <!-- <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'> -->
+    <link href="https://cdn.datatables.net/r/dt/jq-2.1.4,dt-1.10.9,b-1.0.3,b-flash-1.0.3/datatables.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.datatables.net/fixedcolumns/3.3.2/css/fixedColumns.dataTables.min.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/css/custom.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+
+    <body class="report_body">
+
+        <!-- Navigation Bar-->
+        <!-- <div id="includeHeader"></div> -->
+        <header id="topnav">
+
+            <div class="topbar-main">
+
+                <div class="container-fluid">
+
+                    <!-- Logo container-->
+
+                    <div class="logo">
+
+                        <!-- Image Logo -->
+
+                        <a href="1_situation.html" class="logo">
+
+
+                            <img src="../../assets/images/lg/lg_logo.png" alt="" height="48" class="logo-large">
+
+                        </a>
+
+
+                    </div>
+
+                    <!-- End Logo container-->
+
+                    <!-- end menu-extras -->
+                    <div class="header_admin pull-right">
+                      <span class="admin_status">미래사업가 과정</span>
+                      <span class="admin_name">홍길동 / Admin</span>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                </div> <!-- end container -->
+
+            </div>
+
+            <!-- end topbar-main -->
+
+
+            <div class="navbar-custom">
+
+                <div class="container-fluid">
+
+                    <div id="navigation">
+
+                        <!-- Navigation Menu-->
+
+                        <ul class="navigation-menu">
+
+                            <li class="has-submenu">
+
+                                <a href="../admin/1_situation.html" style="color: rgba(255, 255, 255, 0.7)">진단 참여 현황</a>
+
+                            </li>
+
+                            <li class="has-submenu">
+
+                                <a href="../admin/2_analysis.html" style="color: rgba(255, 255, 255, 0.7)">데이터 분석</a>
+
+                            </li>
+
+                            <li class="has-submenu">
+
+                                <a href="../admin/3_report.html" style="color: #fff">레포트 추출</a>
+
+                            </li>
+
+                        </ul>
+
+                        <!-- End navigation menu -->
+
+                    </div> <!-- end #navigation -->
+
+                </div> <!-- end container -->
+
+            </div> <!-- end navbar-custom -->
+
+        </header>
+
+        <!-- End Navigation Bar-->
+
+
+        <div class="wrapper">
+            <div class="container-fluid">
+              <!-- Page-Title -->
+              <div class="row">
+                  <div class="col-sm-12">
+                      <div class="page-title-box">
+
+                          <!-- <h4 class="page-title">Participant</h4> -->
+                      </div>
+                  </div>
+              </div>
+              <!-- end page title end breadcrumb -->
+                <div class="row">
+                  <div class="col-md-12">
+                      <div class="card-box">
+                        <div class="page-title-box admin_analysis">
+                            <h4 class="page-title">레포트 추출</h4>
+                        </div>
+
+
+                        <ul class="nav nav-pills navtab-bg nav-justified">
+                            <li class="nav-item">
+                                <a href="#total_tab" data-toggle="tab" aria-expanded="true" class="nav-link active">
+                                    종합
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#bei_tab" data-toggle="tab" aria-expanded="true" class="nav-link">
+                                    BEI
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#ib_tab" data-toggle="tab" aria-expanded="false" class="nav-link">
+                                    IB
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane show active" id="total_tab">
+
+                              <div class="">
+                                <div class="count-checkboxes-wrapper">
+                                  총 <span id="checked_count4">0</span>명의 참석자를 선택하였습니다.
+                                </div>
+
+                                <table id="example4" class="display" width="100%">
+                                <thead>
+                                  <tr>
+                                    <td rowspan="3">
+                                      <input type='checkbox' data-group='4'>
+                                    </td>
+                                    <td rowspan="3">번호</td>
+                                    <td rowspan="3">기수</td>
+                                    <td rowspan="3">회사</td>
+                                    <td rowspan="3">성명</td>
+                                    <td rowspan="3">성별</td>
+                                    <td rowspan="3">직무</td>
+                                    <td colspan="2"></td>
+                                    <!-- <td></td> -->
+                                    <td colspan="6"></td>
+                                    <!-- <td>2021년</td>
+                                    <td>Gap</td>
+                                    <td>2019년</td>
+                                    <td>2021년</td> -->
+                                  </tr>
+                                  <tr>
+                                    <!-- <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td> -->
+                                    <td colspan="2">Insight</td>
+                                    <!-- <td></td> -->
+                                    <td colspan="3">종합적 상황 인지/판단</td>
+                                    <td colspan="3">실행력 있는 조직 구축 및 관리</td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <!-- <td></td> -->
+                                    <td>Comment</td>
+                                    <td>Qrius</td>
+                                    <td></td>
+                                    <!-- <td>2019년</td>
+                                    <td>2020년</td>
+                                    <td>Gap</td>
+                                    <td>2019년</td>
+                                    <td>2021년</td>
+                                    <td>Gap</td> -->
+                                  </tr>
+                                </thead>
+
+                                <tfoot><tr></tr></tfoot>
+                              </table>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="bei_tab">
+                              <div class="">
+                              <div class="count-checkboxes-wrapper">
+                                총 <span id="checked_count5">0</span>명의 참석자를 선택하였습니다.
+                              </div>
+
+                              <table id="example5" class="display" width="100%">
+                                <thead>
+                                  <tr>
+                                    <td rowspan="3">
+                                      <input type='checkbox' data-group='5'>
+                                    </td>
+                                    <td rowspan="3">번호</td>
+                                    <td rowspan="3">기수</td>
+                                    <td rowspan="3">회사</td>
+                                    <td rowspan="3">성명</td>
+                                    <td rowspan="3">성별</td>
+                                    <td rowspan="3">직무</td>
+                                    <td></td>
+                                    <!-- <td></td> -->
+                                    <td colspan="6">실행조직 구축</td>
+                                    <!-- <td>2021년</td>
+                                    <td>Gap</td>
+                                    <td>2019년</td>
+                                    <td>2021년</td> -->
+                                    <td colspan="6">성과 Drive</td>
+                                    <td rowspan="3">Comment</td>
+
+                                  </tr>
+                                  <tr>
+                                    <!-- <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td> -->
+                                    <td>Insight</td>
+                                    <!-- <td></td> -->
+                                    <td colspan="3">구심점 파악</td>
+                                    <td colspan="3">동기부여/비전제시</td>
+                                    <td colspan="3">도전적 목표 제시</td>
+                                    <td colspan="3">실행 촉진 및 점검</td>
+                                    <td></td>
+
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <!-- <td></td> -->
+                                    <td>Comment</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+
+                                    <!-- <td>2019년</td>
+                                    <td>2020년</td>
+                                    <td>Gap</td>
+                                    <td>2019년</td>
+                                    <td>2021년</td> -->
+                                  </tr>
+                                </thead>
+
+                                <tfoot><tr></tr></tfoot>
+                              </table>
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="ib_tab">
+                              <div class="">
+                              <div class="count-checkboxes-wrapper">
+                                총 <span id="checked_count6">0</span>명의 참석자를 선택하였습니다.
+                              </div>
+
+                              <table id="example6" class="display" width="100%">
+                                <thead>
+                                  <tr>
+                                    <td rowspan="3">
+                                      <input type='checkbox' data-group='6'>
+                                    </td>
+                                    <td rowspan="3">번호</td>
+                                    <td rowspan="3">기수</td>
+                                    <td rowspan="3">회사</td>
+                                    <td rowspan="3">성명</td>
+                                    <td rowspan="3">성별</td>
+                                    <td rowspan="3">직무</td>
+                                    <td rowspan="2">Insight</td>
+                                    <!-- <td></td> -->
+                                    <td colspan="3" rowspan="2">상황파악 및 기회포착</td>
+
+                                    <td colspan="3" rowspan="2">전략방향 설정</td>
+                                    <td colspan="3" rowspan="2">세부 계획 구체화</td>
+
+                                    <td colspan="3" rowspan="2">타당성 검증</td>
+                                    <td></td>
+                                    <td rowspan="3">Comment</td>
+
+                                    <!-- <td>2021년</td>
+                                    <td>Gap</td>
+                                    <td>2019년</td>
+                                    <td>2021년</td> -->
+                                  </tr>
+                                  <tr>
+                                    <!-- <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td> -->
+                                    <!-- <td></td> -->
+                                    <!-- <td></td> -->
+                                    <!-- <td colspan="3"></td> -->
+                                    <!-- <td colspan="3"></td> -->
+                                    <!-- <td colspan="3"></td> -->
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <!-- <td></td> -->
+                                    <td>Comment</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <!-- <td></td> -->
+                                    <!-- <td>2019년</td>
+                                    <td>2020년</td>
+                                    <td>Gap</td>
+                                    <td>2019년</td>
+                                    <td>2021년</td> -->
+                                  </tr>
+                                </thead>
+
+                                <tfoot><tr></tr></tfoot>
+                              </table>
+                              </div>
+                            </div>
+                        </div>
+
+                      </div>
+
+                      <!-- comment modal -->
+                      <div id="comment_modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                          <div class="modal-dialog modal-lg">
+                              <div class="modal-content">
+                                  <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                      <h5 class="modal-title" id="myLargeModalLabel">Comment</h5>
+                                  </div>
+                                  <div class="modal-body">
+                                      <h5>강우준 (전자/1기)</h5>
+                                      <hr>
+                                      <textarea class="comment_textarea" placeholder="Comment를 입력하세요."></textarea>
+                                      <!-- <button class="comment_btn">저장하기</button> -->
+                                  </div>
+                                  <div class="modal-footer">
+                                      <!-- <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button> -->
+                                      <button type="button" class="btn btn-primary waves-effect waves-light comment_btn">저장하기</button>
+                                  </div>
+                              </div><!-- /.modal-content -->
+                          </div><!-- /.modal-dialog -->
+                      </div><!-- /.modal -->
+
+
+                      <!-- Signup modal content -->
+                      <div id="slider_modal" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                    <h5 class="modal-title" id="myLargeModalLabel">LG Qrious</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <h5>강우준 (전자/1기)</h5>
+                                    <hr>
+                                    <!-- <div id="modalhtml"></div> -->
+                                    <div class="row">
+                                      <div class="col-sm-3 right_border">
+                                        <b>추천 컨텐츠</b>
+                                      </div>
+                                      <div class="col-sm-9">
+                                        <div class="row contents_box_container">
+                                          <div class="col-lg-3">
+                                            <div class="contents_box">
+                                              <div class="contents_box_span">아래 역량 범주에서<br>
+                                              추천 컨텐츠를 선택하세요.</div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-3">
+                                            <div class="contents_box">
+                                              <div class="contents_box_span">아래 역량 범주에서<br>
+                                              추천 컨텐츠를 선택하세요.</div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-3">
+                                            <div class="contents_box">
+                                              <div class="contents_box_span">아래 역량 범주에서<br>
+                                              추천 컨텐츠를 선택하세요.</div>
+                                            </div>
+                                          </div>
+                                          <div class="col-lg-3">
+                                            <div class="contents_box">
+                                              <div class="contents_box_span">아래 역량 범주에서<br>
+                                              추천 컨텐츠를 선택하세요.</div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-sm-3 right_border">
+                                        <b>역량 범주</b>
+                                        <br>
+                                        <!-- <label><u>역량 범주</u><i class="mdi mdi-menu-down"></i></label><br> -->
+                                        <select name="range" id="range-select">
+                                            <option value="">역량 범주</option>
+
+                                            <option value="dog">전체</option>
+                                            <option value="dog">성과 Drive</option>
+                                            <option value="cat">타당성 검증</option>
+                                            <option value="hamster">실행 조직 구축</option>
+                                            <option value="parrot">전략 방향 설정</option>
+                                        </select>
+
+                                      </div>
+                                      <div class="col-sm-9">
+                                        <div class="wrap-modal-slider">
+                                          <div class="items">
+                                              <div>
+                                                  <div class="card_background" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/lg/01.jpg')">
+                                                    <div class="card_header odd">
+                                                      Card News
+                                                      <br>
+                                                      한국사회의 변화
+                                                    </div>
+                                                    <div class="card_middleword">
+                                                      코로나 이후의 세계
+                                                    </div>
+                                                  </div>
+                                                  <div class="card_description"></div>
+                                              </div>
+                                              <div>
+                                                  <div class="card_background" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/lg/02.jpg')">
+                                                    <div class="card_header even">
+                                                      Card News
+                                                      <br>
+                                                      한국사회의 변화
+                                                    </div>
+                                                    <div class="card_middleword">
+                                                      코로나 이후의 세계
+                                                    </div>
+                                                  </div>
+                                                  <div class="card_description"></div>
+                                              </div>
+                                              <div>
+                                                  <div class="card_background" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/lg/03.jpg')">
+                                                    <div class="card_header odd">
+                                                      Card News
+                                                      <br>
+                                                      한국사회의 변화
+                                                    </div>
+                                                    <div class="card_middleword">
+                                                      코로나 이후의 세계
+                                                    </div>
+                                                  </div>
+                                                  <div class="card_description"></div>
+                                              </div>
+                                              <div>
+                                                  <div class="card_background" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/lg/04.jpg')">
+                                                    <div class="card_header even">
+                                                      Card News
+                                                      <br>
+                                                      한국사회의 변화
+                                                    </div>
+                                                    <div class="card_middleword">
+                                                      코로나 이후의 세계
+                                                    </div>
+                                                  </div>
+                                                  <div class="card_description"></div>
+                                              </div>
+                                              <div>
+                                                  <div class="card_background" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/lg/01.jpg')">
+                                                    <div class="card_header">
+                                                      Card News
+                                                      <br>
+                                                      한국사회의 변화
+                                                    </div>
+                                                    <div class="card_middleword">
+                                                      코로나 이후의 세계
+                                                    </div>
+                                                  </div>
+                                                  <div class="card_description"></div>
+                                              </div>
+                                              <div>
+                                                  <div class="card_background" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/lg/02.jpg')">
+                                                    <div class="card_header">
+                                                      Card News
+                                                      <br>
+                                                      한국사회의 변화
+                                                    </div>
+                                                    <div class="card_middleword">
+                                                      코로나 이후의 세계
+                                                    </div>
+                                                  </div>
+                                                  <div class="card_description"></div>
+                                              </div>
+                                              <div>
+                                                  <div class="card_background" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/images/lg/03.jpg')">
+                                                    <div class="card_header">
+                                                      Card News
+                                                      <br>
+                                                      한국사회의 변화
+                                                    </div>
+                                                    <div class="card_middleword">
+                                                      코로나 이후의 세계
+                                                    </div>
+                                                  </div>
+                                                  <div class="card_description"></div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <!-- <button type="button" class="btn btn-secondary waves-effect" data-dismiss="modal">Close</button> -->
+                                    <button type="button" class="btn btn-primary waves-effect waves-light comment_btn">저장하기</button>
+                                </div>
+                            </div><!-- /.modal-content -->
+                        </div>
+                        <!-- /.modal-dialog -->
+                      </div><!-- /.modal -->
+                  </div> <!-- end col -->
+
+                </div>
+
+            </div> <!-- end container -->
+        </div>
+        <!-- end wrapper -->
+
+
+        <!-- Footer -->
+        <div id="includeFooter"></div>
+
+        <!-- End Footer -->
+        <script src="../../assets/js/jquery.min.js"></script>
+        <script src="../../assets/js/popper.min.js"></script>
+        <script src="../../assets/js/bootstrap.min.js"></script>
+
+        <script src="https://cdn.datatables.net/r/dt/jq-2.1.4,dt-1.10.9,b-1.0.3,b-flash-1.0.3/datatables.min.js"></script>
+        <script src="https://cdn.datatables.net/select/1.0.1/js/dataTables.select.js"></script>
+        <script src="https://cdn.datatables.net/fixedcolumns/3.3.2/js/dataTables.fixedColumns.min.js"></script>
+
+        <!-- Buttons examples -->
+        <script src="../../assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="../../assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+        <!-- <script src="../../assets/plugins/datatables/jszip.min.js"></script> -->
+        <script src="../../assets/plugins/datatables/pdfmake.min.js"></script>
+        <!-- <script src="../../assets/plugins/datatables/vfs_fonts.js"></script> -->
+        <script src="../../assets/plugins/datatables/buttons.html5.min.js"></script>
+
+        <script src="../../assets/js/custom_datatable.js"></script>
+
+        <script src="../../assets/js/bootstrap.min.js"></script>
+
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script type="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+        <script>
+        // slick slider
+
+          $(document).ready(function(){
+            $('.items').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1
+              });
+          });
+
+          $('.modal').on('shown.bs.modal', function (e) {
+            $('.items').slick('setPosition');
+            $('.wrap-modal-slider').addClass('open');
+          })
+
+          //클릭한 슬라이드 이미지 하나씩 보여주기
+          var n=0;
+          $('.card_background').click(function() {
+            // console.log($(this));
+            $(this).clone().appendTo(".contents_box_container .col-lg-3:eq("+n+")");
+            $(".contents_box_container .col-lg-3:eq("+n+")"+" .contents_box").remove();
+            n++;
+          });
+
+          $('#comment_modal .comment_btn').click(function(){
+              $('#comment_modal').hide();
+              $('.modal-backdrop').remove();
+          });
+
+
+          $('#slider_modal .comment_btn').click(function(){
+              $('#slider_modal').hide();
+              $('.modal-backdrop').remove();
+          });
+
+
+        </script>
+    </body>
+</html>
